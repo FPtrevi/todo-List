@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KCC-eunyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0 auto;
+    font-family: "yg-jalnan";
+}
+
+ul{
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+
+#clock{
+    text-align: center;
+}
+
+#login-form > input:nth-child(1){
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+#login-form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30%;
+}
+
+#greeting{
+    position: absolute;
+    left: 57%;
+    top: 28%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#quote{
+    background-image: url("../img/postits.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 20px;
+    opacity: .9;
+}
+
+#quote span:nth-child(1){
+    display: block;
+    padding: 20% 15% 0 15%;
+    font-family: 'KCC-eunyoung';
+}
+
+#quote span:last-child{
+    display: block;
+    padding: 0 15% 0 15%;
+    font-family: 'KCC-eunyoung';
+}
+
+#todo-form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
+    top: 37%;
+}
+
+#todo-list{
+    position: absolute;
+    left: 38%;
+    top: 42%;
+    transform: translateX(-50%);
+}
+
+#todo-list button{
+    background-color: transparent;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+
+#todo-form > input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+#clock{
+    position: absolute;
+    font-family: "establishRoomNo703OTF";
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
